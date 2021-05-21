@@ -52,15 +52,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-You can find my list of available commands with /help.
-i'm a group manager bot. Maintained by @HEROGAMERS1 ❤
+Hi {}, my name is {}! ❣️ 
+i am a group management bot I can help you to manage your group
+You can find my list of available commands with /help
 
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-
+I'm a Hero For Fun and help admins manage their groups with Your Love❣️! Have a look at the following for an idea of some of the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
@@ -69,7 +69,7 @@ Hey there! My name is *{}*.
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
 
-
+All commands can either be used with / or !.
 {}
 And the following:
 """.format(
@@ -79,7 +79,7 @@ And the following:
 SAITAMA_IMG = "https://telegra.ph/file/b866169a5727df9cc0d30.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Supporting him; [Hero](t.me/HEROGAMERS1)"""
+Supporting him; [Hero](t.me/callme_pro)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -197,14 +197,14 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="👰 Add 𝙇𝙖𝙮𝙡𝙖 to your group",
+                            text="Add Me 👰",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
                              text="Support Group",
-                             url=f"https://t.me/Girls_and_Boys_Chatting"),
+                             url=f"https://t.me/MizuharaHelpSupport"),
                          InlineKeyboardButton(
                              text="📘 Logs",
                              url="https://t.me/LaylaLogs")
@@ -212,7 +212,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="☑️ Source code",
-                             url="https://github.com/QueenArzoo/LaylaRobot")
+                             url="https://github.com/itspro-dev/LaylaRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
@@ -489,7 +489,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 828538706 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
