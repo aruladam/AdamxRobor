@@ -64,7 +64,6 @@ I'm a Hero For Fun and help admins manage their groups with Your Love❣️! Hav
 *Main* commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
@@ -198,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                     [[
                         InlineKeyboardButton(
                             text="Add Me 👰",
-                            url="t.me/{}?startgroup=true".format(
+                            url="t.me/MordredRobot?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
@@ -211,8 +210,8 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="☑️ Source code",
-                             url="https://github.com/itspro-dev/LaylaRobot")
+                             text="☑️ Owner",
+                             url="https://t.me/Skyiarul")
                      ]]))
     else:
         update.effective_message.reply_text(
