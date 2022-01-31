@@ -52,14 +52,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! ❣️ 
+Hi {}, my name is Mordred Robot! ❣️ 
 i am a group management bot I can help you to manage your group
 You can find my list of available commands with /help
 
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
+Hey there! My name is *Mordred Robot*.
 I'm a Hero For Fun and help admins manage their groups with Your Love❣️! Have a look at the following for an idea of some of the things I can help you with.
 *Main* commands available:
  • /help: PM's you this message.
@@ -75,10 +75,10 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/b866169a5727df9cc0d30.mp4"
+SAITAMA_IMG = "https://telegra.ph/file/353f8a3a28e52c2a331af.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Supporting him; [Hero](t.me/callme_pro)"""
+Supporting him; [Arul](t.me/SkyiArul)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -203,10 +203,10 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="Support Group",
-                             url=f"https://t.me/MizuharaHelpSupport"),
+                             url=f"https://t.me/MordredSupport"),
                          InlineKeyboardButton(
                              text="📘 Logs",
-                             url="https://t.me/MizuharaLogs")
+                             url="https://t.me/UpdateMorderd")
                      ],
                      [
                          InlineKeyboardButton(
@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
                      ]]))
     else:
         update.effective_message.reply_text(
-            "I'm online!\n<b>Up since:</b> <code>{}</code>".format(uptime),
+            "I'm Mordred Robot!\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
 
 
