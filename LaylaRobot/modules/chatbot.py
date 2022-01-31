@@ -30,7 +30,7 @@ def add_chat(update: Update, context: CallbackContext):
     user = update.effective_user
     is_chat = sql.is_chat(chat.id)
     if chat.type == "private":
-        msg.reply_text("You can't enable AI in PM.")
+        msg.reply_text("You can't enable Mordred AI in PM.")
         return
 
     if not is_chat:
@@ -46,7 +46,7 @@ def add_chat(update: Update, context: CallbackContext):
         )
         return message
     else:
-        msg.reply_text("AI is already enabled for this chat!")
+        msg.reply_text("Mordred AI is already enabled for this chat!")
         return ""
 
 
@@ -59,7 +59,7 @@ def remove_chat(update: Update, context: CallbackContext):
     user = update.effective_user
     is_chat = sql.is_chat(chat.id)
     if not is_chat:
-        msg.reply_text("AI isn't enabled here in the first place!")
+        msg.reply_text("Mordred AI isn't enabled here in the first place!")
         return ""
     else:
         sql.rem_chat(chat.id)
@@ -143,8 +143,8 @@ Chatbot utilizes the CoffeeHouse API and allows Saitama to talk and provides a m
  • `/addchat`*:* Enables Chatbot mode in the chat.
  • `/rmchat`*:* Disables Chatbot mode in the chat.
 
-Reports bugs at @{SUPPORT_CHAT}
-*Powered by CoffeeHouse* (https://coffeehouse.intellivoid.net/) from @Intellivoid
+Reports bugs at @MordredSupport
+*Powered by CoffeeHouse* (https://coffeehouse.intellivoid.net/) 
 """
 
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat)
